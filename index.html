@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <title>Iniciando sesión...</title>
     <script>
-        // PON AQUÍ LA URL DE TU CLOUDFLARE WORKER (Sin barra / al final)
-        const MI_WORKER = "https://mm2-trade-hub.alexsegcal15.workers.dev";
-        
-        // Captura el código de Roblox y lo manda a tu Worker
-        window.location.href = MI_WORKER + "/auth/callback" + window.location.search;
-    </script>
+    // PON AQUÍ LA URL DE TU CLOUDFLARE WORKER (Sin barra al final)
+    const MI_WORKER = "https://mm2-trade-hub.tu-usuario.workers.dev";
+    
+    // Ahora enviamos directamente a la raíz del Worker
+    window.location.href = MI_WORKER + window.location.search;
+</script>
 </head>
 <body style="background: #121212; color: white; text-align: center; margin-top: 50px; font-family: sans-serif;">
     <h2>Redirigiendo a MM2 Trade Hub... 🚀</h2>
